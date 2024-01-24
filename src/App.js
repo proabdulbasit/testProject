@@ -4,6 +4,7 @@ import Router from "./components/router/Router";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import signup from "./components/signup/signup";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Router />
       </BrowserRouter>
       <signup />
+      <Analytics />
     </div>
   );
 }
